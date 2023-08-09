@@ -60,7 +60,7 @@ const UserAds = () => {
     return <Spinner />;
   }
   return (
-    <>
+    <div className="background1">
       <AdsForm />
       <h2 className="d-flex justify-content-center mt-3">Mano skelbimai</h2>
       <div className="d-flex flex-wrap justify-content-center mt-3">
@@ -74,7 +74,7 @@ const UserAds = () => {
               <Card.Img
                 className="img-fluid img-thumbnail"
                 variant="top"
-                src={item.img}
+                src={item.image}
               />
               <Card.Body>
                 {item.status === "public" ? (
@@ -98,13 +98,13 @@ const UserAds = () => {
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>{item.description}</Card.Text>
                 <Card.Text> Kaina: {item.price}</Card.Text>
-                <Button
+                {/* <Button
                   className="m-2 "
                   variant="primary"
                   // onClick={() => handleUpdates(item)}
                 >
                   Atnaujinti
-                </Button>
+                </Button> */}
                 <Button
                   className="m-2 "
                   variant="outline-danger"
@@ -116,10 +116,10 @@ const UserAds = () => {
             </Card>
           ))
         ) : (
-          <h3>Jus neturite pridetu skelbimu</h3>
+          <h3 className="text-primary">Siuo metu idetu skelbimu nera</h3>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

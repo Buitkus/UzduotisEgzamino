@@ -30,7 +30,7 @@ const CategoryForm = () => {
               placeholder="Iveskite kategorija"
             />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <Button variant="success" type="submit">
             Prideti
           </Button>
         </Form>

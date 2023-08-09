@@ -41,7 +41,7 @@ const Header = () => {
   // console.log(categories);
 
   return (
-    <div>
+    <div className="background1">
       {categories !== undefined && categories.length > 0 ? (
         <>
           {["md"].map((expand) => (

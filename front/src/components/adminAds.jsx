@@ -89,7 +89,7 @@ const AdminAds = () => {
               <Card.Img
                 className="img-fluid img-thumbnail"
                 variant="top"
-                src={item.img}
+                src={item.image}
               />
               <Card.Body>
                 <Card.Title className="border-bottom d-flex justify-content-center">

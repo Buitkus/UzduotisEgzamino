@@ -17,7 +17,7 @@ import User from './pages/User';
 
 function App() {
   return (
-    <>
+    <div className="background1" style={{minHeight: "100vh"}}>
       <Router>
         <div className="container">
           <Header/>
@@ -31,7 +31,7 @@ function App() {
         </div>
       </Router>
       <ToastContainer />
-    </>
+    </div>
   );
 }
 
