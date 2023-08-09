@@ -8,6 +8,7 @@ import Spinner from "./Spinner";
 import { toast } from "react-toastify";
 
 const UserAds = () => {
+  const refresh = () => window.location.reload(true);
   // const [item, setItem] = useState("");
   // const [upAd, setUpAd] = useState("R");
 
@@ -37,6 +38,7 @@ const UserAds = () => {
     } else {
       dispatch(deleteAd(item));
       toast.success("Skelbimas istrintas");
+      refresh()
     }
   };
 
@@ -108,7 +110,8 @@ const UserAds = () => {
                 <Button
                   className="m-2 "
                   variant="outline-danger"
-                  onClick={() => handleClick(item._id)}
+                  onClick={() => handleClick(item._id)
+                   }
                 >
                   Istrinti
                 </Button>

@@ -17,7 +17,7 @@ import Button from "react-bootstrap/Button";
 
 const Admin = () => {
   // const [copyAds, setCopyAds] = useState([]);
-
+  const refresh = () => window.location.reload(true);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -95,7 +95,10 @@ const Admin = () => {
               className="d-flex align-items-center justify-content-between"
             >
               <div className="fw-bold ">{cat.name}</div>
-              <Button variant="danger" onClick={() => onClick(cat._id)}>
+              <Button variant="danger" onClick={() => {
+                onClick(cat._id)
+                refresh();
+                }}>
                 Istrinti
               </Button>
             </ListGroup.Item>
